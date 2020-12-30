@@ -12,18 +12,21 @@ DESCRIPTION = '\n\n'.join(LOAD_TEXT(_) for _ in [
 setup(
   name = 'problem',      
   packages = ['problem'], 
-  version = '0.1.1',  
+  version = '0.1.8',  
   license='MIT', 
   description = 'Need more problem ??',
   long_description=DESCRIPTION,
   author = 'Yingkhun',                 
   author_email = 'yingkhunn@gmail.com',     
   url = 'https://github.com/yingkhun/problem/',  
-  download_url = 'https://github.com/yingkhun/problem/archive/v0.1.1.zip',  
+  download_url = 'https://github.com/yingkhun/problem/archive/v0.1.8.zip',  
   keywords = ['problem', 'problemm', 'problemmm'],
   install_requires=[            # I get to this in a second
         'gspread',
         'oauth2client',
+        'gdown',
+        'requests',
+        'bs4'
     ],
   classifiers=[
     'Development Status :: 3 - Alpha',     
